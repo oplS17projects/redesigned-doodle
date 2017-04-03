@@ -1,10 +1,10 @@
 # redesigned-doodle
-harsh patel and scott quinn
+Harsh Patel and Scott uinn
 # redesigned-doodle
 
 ### Statement
-Describe your project. Why is it interesting? Why is it interesting to you personally? What do you hope to learn? 
-We are goin to replicate the examples given inside the turtle-examples library. It is interesting because it would give a deeper understanding of the turtles library. Personally I find it interesting because I enjoyed playing around with the library. I hope to learn how this library works. 
+
+We are going to replicate the examples given inside the turtle-examples library. It is interesting because it would give a deeper understanding of the turtles library. Personally I find it interesting because I enjoyed playing around with the library. I hope to learn how this library works. 
 
 ### Analysis
 Explain what approaches from class you will bring to bear on the project.
@@ -12,51 +12,50 @@ Explain what approaches from class you will bring to bear on the project.
 Be explicit about the techiques from the class that you will use. For example:
 
 - Will you use data abstraction? How?
-- Will you use recursion? How?
---yes by replicating the Sierpinski triangle function and Koch snowflake function
-- Will you use map/filter/reduce? How? 
-- Will you use object-orientation? How?
-- Will you use functional approaches to processing your data? How?
-- Will you use state-modification approaches? How? (If so, this should be encapsulated within objects. `set!` pretty much should only exist inside an object.)
-- Will you build an expression evaluator, like we did in the symbolic differentatior and the metacircular evaluator?
-- Will you use lazy evaluation approaches?
 
-The idea here is to identify what ideas from the class you will use in carrying out your project. 
+Replicating the Sierpinski triangle function and Koch snowflake function both use recursive calls.
 
-**Your project will be graded, in part, by the extent to which you adopt approaches from the course into your implementation, _and_ your discussion about this.**
+[//]:<>(- Will you use map/filter/reduce? How? 
+[//]:<>- Will you use object-orientation? How?
+[//]:<>- Will you use functional approaches to processing your data? How?
+[//]:<>- Will you use state-modification approaches? How? (If so, this should be encapsulated within objects. `set!` pretty much should only exist inside an object.)
+[//]:<>- Will you build an expression evaluator, like we did in the symbolic differentatior and the metacircular evaluator?
+[//]:<>- Will you use lazy evaluation approaches?)
 
-;;### External Technologies
-;;You are encouraged to develop a project that connects to external systems. For example, this includes systems that:
 
-;;- retrieve information or publish data to the web
-;- generate or process sound
-;- control robots or other physical systems
-;- interact with databases
 
-;If your project will do anything in this category (not only the things listed above!), include this section and discuss.
+### External Technologies
+You are encouraged to develop a project that connects to external systems. For example, this includes systems that:
 
-;### Data Sets or other Source Materials
-;If you will be working with existing data, where will you get those data from? (Dowload from a website? Access in a database? Create in ;a simulation you will build? ...)
+- retrieve information or publish data to the web
+- generate or process sound
+- control robots or other physical systems
+- interact with databases
 
-;How will you convert your data into a form usable for your project?  
+If your project will do anything in this category (not only the things listed above!), include this section and discuss.
 
-;If you are pulling data from somewhere, actually go download it and look at it before writing the proposal. Explain in some detail what ;your plan is for accomplishing the necessary processing.
-;
-;If you are using some other starting materials, explain what they are. Basically: anything you plan to use that isn't code.
+### Data Sets or other Source Materials
+If you will be working with existing data, where will you get those data from? (Dowload from a website? Access in a database? Create in a simulation you will build? ...)
+
+How will you convert your data into a form usable for your project?  
+
+If you are pulling data from somewhere, actually go download it and look at it before writing the proposal. Explain in some detail what your plan is for accomplishing the necessary processing.
+
+If you are using some other starting materials, explain what they are. Basically: anything you plan to use that isn't code.
 
 ### Deliverable and Demonstration
-Explain exactly what you'll have at the end. What will it be able to do at the live demo?
+
 At the end of the project sequence we should be able to do all that the examples libary does and more.
 
-What exactly will you produce at the end of the project? A piece of software, yes, but what will it do? Here are some questions to think about (and answer depending on your application).
+
 Our project will just be a series of functions that should be able to be run from any instance of racket.
 
 
-Will it be interactive? Can you show it working? This project involves a live demo, so interactivity is good.
+
 It will be interactive by typing the functions into the REPL.
 
 ### Evaluation of Results
-How will you know if you are successful? 
+
 If it actually draws things onto the screen we would consider it to be sucessful.
 
 ## Architecture Diagram
@@ -65,8 +64,6 @@ Upload the architecture diagram you made for your slide presentation to your rep
 Create several paragraphs of narrative to explain the pieces and how they interoperate.
 
 ## Schedule
-Explain how you will go from proposal to finished product. 
-
 We would go step by step through the examples and when they are operating successfully we would continue to the next. Repeat until done.
 There are three deliverable milestones to explicitly define, below.
 
