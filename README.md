@@ -59,7 +59,7 @@ It will be interactive by typing the functions into the REPL.
 If it actually draws things onto the screen we would consider it to be sucessful.
 
 ## Architecture Diagram
-![ad](/ad.jpg?raw=true"ad")
+![AD](/AD.png?raw=true"AD")
 
 The diagram splits the basic functions of the turtle library into 2 general categories: Moving the turtle and manipulating the turtle. Moving does just that. It moves the turtle. There it draws, erases, and turns the turtle. This also includes the offset type for each type of function. The other part is manipulation. This is used to indirectly influence the image being drawn such as creating multiple turtles. 
 
