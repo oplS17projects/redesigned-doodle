@@ -1,6 +1,6 @@
-# redesigned-doodle
-Harsh Patel and Scott Quinn
-# redesigned-doodle
+# Redesigned-Doodle
+ Scott Quinn and Harsh Patel
+# Redesigned-Doodle
 
 ### Statement
 
