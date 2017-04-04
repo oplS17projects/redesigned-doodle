@@ -1,6 +1,6 @@
-# redesigned-doodle
-Harsh Patel and Scott uinn
-# redesigned-doodle
+# Redesigned-Doodle
+Scott Quinn and Harsh Patel  
+# Redesigned-Doodle
 
 ### Statement
 
@@ -61,6 +61,7 @@ If it actually draws things onto the screen we would consider it to be sucessful
 ## Architecture Diagram
 ![ad](/ad.jpg?raw=true"ad")
 
+The user interacts with the help of the GUI library. The GUI library is the intermediate between the user and the turtles library. 
 The diagram splits the basic functions of the turtle library into 2 general categories: Moving the turtle and manipulating the turtle. Moving does just that. It moves the turtle. There it draws, erases, and turns the turtle. This also includes the offset type for each type of function. The other part is manipulation. This is used to indirectly influence the image being drawn such as creating multiple turtles. 
 
 ## Schedule
@@ -76,6 +77,7 @@ Write concrete steps for your schedule to move from concept to working system.
 ### First Milestone (Sun Apr 9)
 Which portion of the work will be completed (and committed to Github) by this day? 
 -We will do the first 6 examples (until gapped-lines)
+and also be done with the user interface. 
 
 ### Second Milestone (Sun Apr 16)
 Which portion of the work will be completed (and committed to Github) by this day? 
@@ -99,7 +101,7 @@ Please use Github properly: each individual must make the edits to this file rep
 In the headings below, replace the silly names and GitHub handles with your actual ones.
 
 ### Harsh Patel @hpatel28
-Harsh will work on half of the examples.
+Harsh will work on the GUI library.
 
 ### Scott Quinn @Scott-Quinn
-Scott is team lead. Additionally, Scott will work on the other half.   
+Scott is team lead. Additionally, Scott will work on the Turtles library. 
