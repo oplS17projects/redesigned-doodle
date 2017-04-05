@@ -24,24 +24,7 @@ Replicating the Sierpinski triangle function and Koch snowflake function both us
 
 
 
-### External Technologies
-You are encouraged to develop a project that connects to external systems. For example, this includes systems that:
 
-- retrieve information or publish data to the web
-- generate or process sound
-- control robots or other physical systems
-- interact with databases
-
-If your project will do anything in this category (not only the things listed above!), include this section and discuss.
-
-### Data Sets or other Source Materials
-If you will be working with existing data, where will you get those data from? (Dowload from a website? Access in a database? Create in a simulation you will build? ...)
-
-How will you convert your data into a form usable for your project?  
-
-If you are pulling data from somewhere, actually go download it and look at it before writing the proposal. Explain in some detail what your plan is for accomplishing the necessary processing.
-
-If you are using some other starting materials, explain what they are. Basically: anything you plan to use that isn't code.
 
 ### Deliverable and Demonstration
 
@@ -52,7 +35,7 @@ Our project will just be a series of functions that should be able to be run fro
 
 
 
-It will be interactive by typing the functions into the REPL.
+It will be interactive by typing having the user press buttons to select what they want to be drawn.
 
 ### Evaluation of Results
 
@@ -61,6 +44,7 @@ If it actually draws things onto the screen we would consider it to be sucessful
 ## Architecture Diagram
 ![AD](/AD.png?raw=true"AD")
 
+The user interacts with the help of the GUI library. The GUI library is the intermediate between the user and the turtles library.
 The diagram splits the basic functions of the turtle library into 2 general categories: Moving the turtle and manipulating the turtle. Moving does just that. It moves the turtle. There it draws, erases, and turns the turtle. This also includes the offset type for each type of function. The other part is manipulation. This is used to indirectly influence the image being drawn such as creating multiple turtles. 
 
 ## Schedule
@@ -76,6 +60,7 @@ Write concrete steps for your schedule to move from concept to working system.
 ### First Milestone (Sun Apr 9)
 Which portion of the work will be completed (and committed to Github) by this day? 
 -We will do the first 6 examples (until gapped-lines)
+-We should also be done with the user interface.
 
 ### Second Milestone (Sun Apr 16)
 Which portion of the work will be completed (and committed to Github) by this day? 
