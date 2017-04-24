@@ -11,19 +11,13 @@ Explain what approaches from class you will bring to bear on the project.
 
 Be explicit about the techiques from the class that you will use. For example:
 
-
 Replicating the Sierpinski triangle function and Koch snowflake function both use recursive calls.
 
 
 ### Deliverable and Demonstration
 
 At the end of the project sequence we are able to do all that the examples libary does and more.
-
-
 Our project is just a series of functions that should be able to be run from any instance of racket.
-
-
-
 It will be interactive by typing having the user press buttons to select what they want to be drawn.
 
 ### Evaluation of Results
@@ -65,7 +59,7 @@ Here each group member gets a section where they, as an individual, detail what 
 Please use Github properly: each individual must make the edits to this file representing their own section of work.
 
 ### Harsh Patel @hpatel28
-Harsh will work on designing the GUI that will let the user choose what they would like to be drawn.
+I couldn't get the interface working. 
 
 ### Scott Quinn @Scott-Quinn
 Scott is team lead. Additionally, Scott will work on replicating the turtle examples.
