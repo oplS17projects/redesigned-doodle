@@ -4,34 +4,23 @@
 
 ### Statement
 
-We are going to replicate the examples given inside the turtle-examples library. We will prompt the user to choose what they want and with the bress of a button it would be created and they can choose if they would like to save it as a file. It is interesting because it would give a deeper understanding of the turtles and GUI library. Personally I find it interesting because I enjoyed playing around with the library. I hope to learn how this library works. 
+We  replicated the examples given inside the turtle-examples library. We prompt the user to choose what they want and with the press of a button creates the example and they can choose if they would like to save it as a file. It is interesting because it would give a deeper understanding of the turtles and GUI library. Personally I find it interesting because I enjoyed playing around with the library. I hope to learn how this library works. 
 
 ### Analysis
 Explain what approaches from class you will bring to bear on the project.
 
 Be explicit about the techiques from the class that you will use. For example:
 
-- Will you use data abstraction? How?
 
 Replicating the Sierpinski triangle function and Koch snowflake function both use recursive calls.
-
-[//]:<>(- Will you use map/filter/reduce? How? 
-[//]:<>(- Will you use object-orientation? How?)
-[//]:<>(- Will you use functional approaches to processing your data? How?)
-[//]:<>(- Will you use state-modification approaches? How? If so, this should be encapsulated within objects. `set!` pretty much should only exist inside an object.)
-[//]:<>(- Will you build an expression evaluator, like we did in the symbolic differentatior and the metacircular evaluator?)
-[//]:<>(- Will you use lazy evaluation approaches?)
-
-
-
 
 
 ### Deliverable and Demonstration
 
-At the end of the project sequence we should be able to do all that the examples libary does and more.
+At the end of the project sequence we are able to do all that the examples libary does and more.
 
 
-Our project will just be a series of functions that should be able to be run from any instance of racket.
+Our project is just a series of functions that should be able to be run from any instance of racket.
 
 
 
@@ -59,12 +48,12 @@ Write concrete steps for your schedule to move from concept to working system.
 
 ### First Milestone (Sun Apr 9)
 Which portion of the work will be completed (and committed to Github) by this day? 
--We will do the first 6 examples (until gapped-lines)
+-We did the first 6 examples (until gapped-lines)
 -We should also be done with the user interface.
 
 ### Second Milestone (Sun Apr 16)
 Which portion of the work will be completed (and committed to Github) by this day? 
--Sierpinski triangle and Koch snoflake done 
+We found out how to actually use the turtle-examples library. We did some minor edits to farious functions so that they could run properly.
 
 ### Public Presentation (Mon Apr 24, Wed Apr 26, or Fri Apr 28 [your date to be determined later])
 What additionally will be completed before the public presentation?
