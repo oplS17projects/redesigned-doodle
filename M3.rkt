@@ -32,13 +32,13 @@
            (draw-sides sides)))
 
 (define (regular-polys sides s)
-  (define (make-polys n)
+  (define (make-polys s n)
     (cond
       [(zero? n) (void)]
       [else
        (regular-poly sides (* n 5))
-       (make-polys (sub1 n))]))
-  (make-polys sides))
+       (make-polys n (sub1 n))]))
+  (make-polys sides s))
 
 (define (radial-turtles n)
   (cond
