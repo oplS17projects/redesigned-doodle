@@ -1,0 +1,79 @@
+List of Procedures you could Try!!
+
+>(regular-poly sides radius) ? void?
+  sides : exact-nonnegative-integer?
+  radius : real?
+Draws a regular poly centered at the turtle with sides sides and with radius radius.
+
+
+>(regular-polys n s) ? void?
+  n : exact-nonnegative-integer?
+  s : any/c
+Draws n regular polys each with n sides centered at the turtle.
+
+
+>(radial-turtles n) ? void?
+  n : exact-nonnegative-integer?
+Places 2n turtles spaced evenly pointing radially outward.
+
+>(spaced-turtles n) ? void?
+  n : exact-nonnegative-integer?
+Places 2n turtles evenly spaced in a line and pointing in the same direction as the original turtle.
+
+
+>(spokes) ? void?
+Draws some spokes, using radial-turtles and spaced-turtles.
+
+>(gapped-lines) ? void?
+Draw a bunch of parallel line segments, using spaced-turtles.
+
+
+>(spyro-gyra) ? void?
+Draws a spyro-grya reminiscent shape.
+
+
+>(neato) ? void?
+As the name says...
+
+
+>(graphics-bexam) ? void?
+Draws a fractal that came up on an exam given at Rice in 1997 or so.
+value
+sierp-size : real?
+A constant that is a good size for the sierp procedures.
+
+>(sierp sierp-size) ? void?
+  sierp-size : real?
+
+
+>(sierp-nosplit sierp-size) ? void?
+  sierp-size : real?
+Draws the Sierpinski triangle in two different ways, the first using split heavily. After running the first one, try executing (draw 10).
+value
+koch-size : real?
+A constant that is a good size for the koch procedures.
+
+
+>(koch-split koch-size) ? void?
+  koch-size : real?
+
+
+>(koch-draw koch-size) ? void?
+  koch-size : real?
+Draws the same Koch snowflake in two different ways.
+
+
+>(lorenz1) ? void?
+Calls lorenz with good initial values.
+
+fern-size : exact-nonnegative-integer?
+A good size for the fern1 and fern2 functions.
+
+
+>(fern fern-size) ? void?
+  fern-size : exact-nonnegative-integer?
+Draws a fern fractal.
+
+>(fract number-of-tentcles max-length) -> void?
+number-of-tentcles: number of tentcles 
+max-size: max size of the fract(turtle)
