@@ -31,7 +31,7 @@ It will be interactive by typing having the user press buttons to select what th
 If it actually draws things onto the screen we would consider it to be sucessful.
 
 ## Architecture Diagram
-![AD](/AD.png?raw=true"AD")
+![ADF](/ADF.png?raw=true"ADF")
 
 The user interacts with the help of the GUI library. The GUI library is the intermediate between the user and the turtles library.
 The diagram splits the basic functions of the turtle library into 2 general categories: Moving the turtle and manipulating the turtle. Moving does just that. It moves the turtle. There it draws, erases, and turns the turtle. This also includes the offset type for each type of function. The other part is manipulation. This is used to indirectly influence the image being drawn such as creating multiple turtles. 
