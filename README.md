@@ -51,7 +51,7 @@ We found out how to actually use the turtle-examples library. We did some minor 
 
 ### Public Presentation (Mon Apr 24, Wed Apr 26, or Fri Apr 28 [your date to be determined later])
 What additionally will be completed before the public presentation?
--Ideally, we would have the completed library for the presentation.
+-We got the library working. Some of the examples did not work. We  fixed regular-polys (the second number didn't do anything), and lorenz( the turtle wouldn't animate). We also added a basic function called fract that randomly draws fractured lines.
 
 ## Group Responsibilities
 Here each group member gets a section where they, as an individual, detail what they are responsible for in this project. Each group member writes their own Responsibility section. Include the milestones and final deliverable.
