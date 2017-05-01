@@ -3,6 +3,7 @@
 (require graphics/turtles)
 (turtles)
 
+;made just does a random symmetrical pattern
 (define (fract n length)
   (define (fract-loop n length)
     ((cond
@@ -30,6 +31,104 @@
   (tprompt (move radius)
            (turn/radians (/ (+ pi theta) 2))
            (draw-sides sides)))
+
+;made. creates a polygon and places another polygon on the outside edge of each side.
+(define (pattern-poly sides radius)
+  (define (pattern-poly-helper s r t)
+    (cond
+      [(> t s) (void)]
+      [(tprompt (turn (* (- (* 2 t) 1)(/ 180 s)))
+                (move  (* 2 (* r (cos (/ pi s)))))
+                (cond
+                  [(even? s) (turn (/ 180 s))])
+                (regular-poly s r))
+       (pattern-poly-helper s r (+ t 1))]))
+  (pattern-poly-helper sides radius 1))
+
+
+;made. just moves the turtle to the top right corner
+(define (checker-position)
+  (move -400)
+  (turn 90)
+  (move 390)
+  (turn -90))
+;made. draws a black square and a white square
+(define (checkers)
+  (turn 45)
+  (regular-polys 4 10)
+  (regular-polys 4 10)
+  (regular-polys 4 10)
+  (move-offset 15 0)
+  (regular-poly 4 10)
+  (move-offset 15 0)
+  (turn -45))
+;made. draws a white square and a black square
+(define (alt-checkers)
+  (turn 45)
+  (regular-poly 4 10)
+  (move-offset 15 0)
+  (regular-polys 4 10)
+  (regular-polys 4 10)
+  (regular-polys 4 10)
+  (move-offset 15 0)
+  (turn -45))
+;made. draws a checker line starting from black
+(define (checkers-line l)
+  ;(turn 45)
+  (define (clh l)
+    (cond
+      [(zero? l) (void)]
+      [(checkers)
+       (clh (sub1 l))]))
+  (clh l)
+  (move-offset (* -15 2 l) 15))
+;made. draws a checker line starting from white
+(define (alt-checkers-line l)
+  ;(turn 45)
+  (define (clh l)
+    (cond
+      [(zero? l) (void)]
+      [(alt-checkers)
+       (clh (sub1 l))]))
+  (clh l)
+  (move-offset (* -15 2 l) 15))
+;mixes the two checker lines into a board 2r X 2r
+;25 is too big and hurts the eyes after looking at it for a while
+(define (checkers-board r)
+  (define (cbh r c)
+    (cond
+      [(zero? c) (void)]
+      [(checkers-line r)
+       (alt-checkers-line r)
+       (cbh r (sub1 c))]))
+  (cbh r r))
+
+
+
+;made. Its essentially the same as the checker except it makes the illusion where you see dots where there are none.
+(define (illusion-b)
+  (turn 45)
+  (regular-polys 4 10)
+  (regular-polys 4 10)
+  (regular-polys 4 10)
+  (move-offset 20 0)
+  (turn -45))
+(define (illusion-l l)
+  ;(turn 45)
+  (define (llh l)
+    (cond
+      [(zero? l) (void)]
+      [(illusion-b)
+       (llh (sub1 l))]))
+  (llh l)
+  (move-offset (* -20 l) 20))
+(define (illusion l)
+ (define (ich l c)
+   (cond
+     [(zero? c) (void)]
+     [(illusion-l l)
+      (ich l (sub1 c))]))
+  (ich l l))
 
 (define (regular-polys sides s)
   (define (make-polys s n)
@@ -167,7 +266,7 @@
                  (move koch-size)
                  (turn/radians pi)))
   (side koch-size))
-
+;changed draws the lorenz curve instead
 (define (lorenz a b c)
   (define (loop x y z d)
     (cond
